@@ -126,6 +126,31 @@
         <always_on>1</always_on>
         <update_rate>30</update_rate>
       </sensor>
+      <!-- Added: Magnetometer sensor for compass functionality -->
+      <sensor name="magnetometer_sensor" type="magnetometer">
+        <always_on>1</always_on>
+        <update_rate>50</update_rate>
+        <magnetometer>
+          <x>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.02</stddev>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.02</stddev>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.02</stddev>
+            </noise>
+          </z>
+        </magnetometer>
+      </sensor>
       <gravity>1</gravity>
       <velocity_decay/>
       <self_collide>0</self_collide>
