@@ -440,9 +440,5 @@
     <plugin filename="gz-sim-apply-joint-force-system" name="gz::sim::systems::ApplyJointForce">
       <joint_name>rotor_pusher_joint</joint_name>
     </plugin>
-    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
-      <joint_name>rotor_pusher_joint</joint_name>
-      <sub_topic>rotor_pusher</sub_topic>
-    </plugin>
   </model>
 </sdf>
