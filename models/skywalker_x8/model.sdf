@@ -222,7 +222,6 @@
           <spring_stiffness>0</spring_stiffness>
           <damping>0.002</damping>
         </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
 
