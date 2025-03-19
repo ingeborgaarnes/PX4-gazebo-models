@@ -437,8 +437,8 @@
     </plugin>
     <!-- Added: Control for rotor pusher, based on Standard Plane -->
     <plugin filename="gz-sim-multicopter-motor-model-system" name="gz::sim::systems::MulticopterMotorModel">
-      <jointName>rotor_puller_joint</jointName>
-      <linkName>rotor_puller</linkName>
+      <jointName>rotor_pusher_joint</jointName>
+      <linkName>rotor_pusher</linkName>
       <turningDirection>cw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
@@ -452,5 +452,6 @@
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
       <motorType>velocity</motorType>
     </plugin>
+    <static>0</static>
   </model>
 </sdf>
