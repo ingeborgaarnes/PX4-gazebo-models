@@ -138,25 +138,25 @@
             <x>
               <noise type="gaussian">
                 <mean>0</mean>
-                <stddev>0.0003394</stddev>
-                <dynamic_bias_stddev>3.8785e-05</dynamic_bias_stddev>
-                <dynamic_bias_correlation_time>1000</dynamic_bias_correlation_time>
+                <stddev>0.005</stddev>
+                <dynamic_bias_stddev>0.001</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>600</dynamic_bias_correlation_time>
               </noise>
             </x>
             <y>
               <noise type="gaussian">
                 <mean>0</mean>
-                <stddev>0.0003394</stddev>
-                <dynamic_bias_stddev>3.8785e-05</dynamic_bias_stddev>
-                <dynamic_bias_correlation_time>1000</dynamic_bias_correlation_time>
+                <stddev>0.005</stddev>
+                <dynamic_bias_stddev>0.001</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>600</dynamic_bias_correlation_time>
               </noise>
             </y>
             <z>
               <noise type="gaussian">
                 <mean>0</mean>
-                <stddev>0.0003394</stddev>
-                <dynamic_bias_stddev>3.8785e-05</dynamic_bias_stddev>
-                <dynamic_bias_correlation_time>1000</dynamic_bias_correlation_time>
+                <stddev>0.005</stddev>
+                <dynamic_bias_stddev>0.001</dynamic_bias_stddev>
+                <dynamic_bias_correlation_time>600</dynamic_bias_correlation_time>
               </noise>
             </z>
           </angular_velocity>
@@ -164,24 +164,24 @@
             <x>
               <noise type="gaussian">
                 <mean>0</mean>
-                <stddev>0.004</stddev>
-                <dynamic_bias_stddev>0.006</dynamic_bias_stddev>
+                <stddev>0.1</stddev>
+                <dynamic_bias_stddev>0.02</dynamic_bias_stddev>
                 <dynamic_bias_correlation_time>300</dynamic_bias_correlation_time>
               </noise>
             </x>
             <y>
               <noise type="gaussian">
                 <mean>0</mean>
-                <stddev>0.004</stddev>
-                <dynamic_bias_stddev>0.006</dynamic_bias_stddev>
+                <stddev>0.1</stddev>
+                <dynamic_bias_stddev>0.02</dynamic_bias_stddev>
                 <dynamic_bias_correlation_time>300</dynamic_bias_correlation_time>
               </noise>
             </y>
             <z>
               <noise type="gaussian">
                 <mean>0</mean>
-                <stddev>0.004</stddev>
-                <dynamic_bias_stddev>0.006</dynamic_bias_stddev>
+                <stddev>0.1</stddev>
+                <dynamic_bias_stddev>0.02</dynamic_bias_stddev>
                 <dynamic_bias_correlation_time>300</dynamic_bias_correlation_time>
               </noise>
             </z>
@@ -195,7 +195,7 @@
           <pressure>
             <noise type="gaussian">
               <mean>0</mean>
-              <stddev>0.01</stddev>
+              <stddev>0.05</stddev>
             </noise>
           </pressure>
         </air_pressure>
@@ -228,6 +228,20 @@
       <sensor name="navsat_sensor" type="navsat">
         <always_on>1</always_on>
         <update_rate>30</update_rate>
+        <navsat>
+          <position>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>1.5</stddev> <!-- ~1.5 meters positional accuracy -->
+            </noise>
+          </position>
+          <velocity>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.2</stddev> <!-- ~0.2 m/s velocity accuracy -->
+            </noise>
+          </velocity>
+        </navsat>
       </sensor>
     </link>
     <link name='rotor_0'>
