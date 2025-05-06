@@ -5,6 +5,7 @@
       <max_step_size>0.004</max_step_size>
       <real_time_factor>1.0</real_time_factor>
       <real_time_update_rate>250</real_time_update_rate>
+      <enable_wind>true</enable_wind>
     </physics>
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
@@ -59,7 +60,6 @@
             <izz>1</izz>
           </inertia>
         </inertial>
-        <enable_wind>true</enable_wind>
       </link>
       <pose>0 0 0 0 -0 0</pose>
       <self_collide>false</self_collide>
