@@ -701,7 +701,7 @@
       <cma_stall>0</cma_stall>
       <cp>-0.05 0.3 0.05</cp>
       <area>0.50</area>
-      <air_density>1.2041</air_density>
+      <air_density>1.159</air_density>
       <forward>1 0 0</forward>
       <upward>0 0 1</upward>
       <link_name>base_link</link_name>
@@ -724,7 +724,7 @@
       <cma_stall>0</cma_stall>
       <cp>-0.05 -0.3 0.05</cp>
       <area>0.50</area>
-      <air_density>1.2041</air_density>
+      <air_density>1.159</air_density>
       <forward>1 0 0</forward>
       <upward>0 0 1</upward>
       <link_name>base_link</link_name>
@@ -747,7 +747,7 @@
       <cma_stall>0</cma_stall>
       <cp>-0.5 0 0</cp>
       <area>0.01</area>
-      <air_density>1.2041</air_density>
+      <air_density>1.159</air_density>
       <forward>1 0 0</forward>
       <upward>0 0 1</upward>
       <link_name>base_link</link_name>
