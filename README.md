@@ -33,3 +33,7 @@ The following arguments can be passed:
 `--dryrun` A boolean variable that can be set when running testcases. It will not provide any interactivity and will not start Gazebo simulation.
 
 `--headless` A boolean variable providing the ability to run in headless (server-only) mode. This is the [mode of operation in macOS](https://gazebosim.org/docs/harmonic/getstarted#macos), and is more suitable for container use.
+
+
+## Making changes to a world or model (The Falcon Project)
+If you want to make changes to your gazebo world or model for the [Falcon project](https://github.com/ingeborgaarnes/PX4-Autopilot), this has to be done by adding, removing or changing the files in this repo. After the adjusted model or world is pushed back here, the gazebo simulation submodule needs to be updated in PX4. This process is described in the [README](https://github.com/ingeborgaarnes/PX4-Autopilot/blob/main/README.md) of the project repo. 
